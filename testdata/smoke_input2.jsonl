@@ -1,0 +1,7 @@
+{"op":"register-flight","number":"CZ789","from":"SHA","to":"CTU"}
+{"op":"rebook","label":"TAG001","segments":[{"flight":"CZ789","from":"SHA","to":"CTU"}]}
+{"op":"scan","id":5,"type":"load","label":"TAG001","time":20,"flight":"MU456"}
+{"op":"scan","id":6,"type":"load","label":"TAG001","time":21,"flight":"CZ789"}
+{"op":"scan","id":7,"type":"unload","label":"TAG001","time":22,"flight":"CZ789"}
+{"op":"scan","id":8,"type":"deliver","label":"TAG001","time":23}
+{"op":"query","label":"TAG001"}

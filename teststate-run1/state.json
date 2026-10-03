@@ -1,0 +1,251 @@
+{
+  "flights": {
+    "CA123": {
+      "number": "CA123",
+      "from": "PEK",
+      "to": "SHA"
+    },
+    "CZ789": {
+      "number": "CZ789",
+      "from": "SHA",
+      "to": "CTU"
+    },
+    "MU456": {
+      "number": "MU456",
+      "from": "SHA",
+      "to": "CAN"
+    }
+  },
+  "bags": {
+    "TAG001": {
+      "label": "TAG001",
+      "completed": [
+        {
+          "flight": "CA123",
+          "from": "PEK",
+          "to": "SHA"
+        },
+        {
+          "flight": "CZ789",
+          "from": "SHA",
+          "to": "CTU"
+        }
+      ],
+      "remaining": [],
+      "location": "CTU",
+      "delivered": true,
+      "last_time": 23,
+      "scans": [
+        {
+          "id": 1,
+          "type": "load",
+          "time": 10,
+          "flight": "CA123"
+        },
+        {
+          "id": 2,
+          "type": "remove",
+          "time": 11,
+          "flight": "CA123"
+        },
+        {
+          "id": 3,
+          "type": "load",
+          "time": 12,
+          "flight": "CA123"
+        },
+        {
+          "id": 4,
+          "type": "unload",
+          "time": 13,
+          "flight": "CA123"
+        },
+        {
+          "id": 6,
+          "type": "load",
+          "time": 21,
+          "flight": "CZ789"
+        },
+        {
+          "id": 7,
+          "type": "unload",
+          "time": 22,
+          "flight": "CZ789"
+        },
+        {
+          "id": 8,
+          "type": "deliver",
+          "time": 23
+        }
+      ]
+    }
+  },
+  "events": {
+    "1": {
+      "hash": "6172138386141546fe23b792c56b61db9347d229ccb6a62dc3e41d041732906b",
+      "body": {
+        "status": "ok",
+        "replayed": false,
+        "label": "TAG001",
+        "location": "PEK",
+        "loaded": "CA123",
+        "delivered": false,
+        "completed": [],
+        "remaining": [
+          {
+            "flight": "CA123",
+            "from": "PEK",
+            "to": "SHA"
+          },
+          {
+            "flight": "MU456",
+            "from": "SHA",
+            "to": "CAN"
+          }
+        ]
+      }
+    },
+    "2": {
+      "hash": "b9889295cc20490407a10afcfea2d7dee08c6010414737961c04292d7914911c",
+      "body": {
+        "status": "ok",
+        "replayed": false,
+        "label": "TAG001",
+        "location": "PEK",
+        "delivered": false,
+        "completed": [],
+        "remaining": [
+          {
+            "flight": "CA123",
+            "from": "PEK",
+            "to": "SHA"
+          },
+          {
+            "flight": "MU456",
+            "from": "SHA",
+            "to": "CAN"
+          }
+        ]
+      }
+    },
+    "3": {
+      "hash": "38f0d67bc9893b5e9412ec2fc423754859a49940c4e56defcd81d800e91108e0",
+      "body": {
+        "status": "ok",
+        "replayed": false,
+        "label": "TAG001",
+        "location": "PEK",
+        "loaded": "CA123",
+        "delivered": false,
+        "completed": [],
+        "remaining": [
+          {
+            "flight": "CA123",
+            "from": "PEK",
+            "to": "SHA"
+          },
+          {
+            "flight": "MU456",
+            "from": "SHA",
+            "to": "CAN"
+          }
+        ]
+      }
+    },
+    "4": {
+      "hash": "c71596769d08d45895e470be2528f8e29b66a8ff63ab1a76d7ae140f0d988991",
+      "body": {
+        "status": "ok",
+        "replayed": false,
+        "label": "TAG001",
+        "location": "SHA",
+        "delivered": false,
+        "completed": [
+          {
+            "flight": "CA123",
+            "from": "PEK",
+            "to": "SHA"
+          }
+        ],
+        "remaining": [
+          {
+            "flight": "MU456",
+            "from": "SHA",
+            "to": "CAN"
+          }
+        ]
+      }
+    },
+    "6": {
+      "hash": "7a47751998883f63a7010b1a7cfc92c3482d6ab06f223eb8319243b9b50369dd",
+      "body": {
+        "status": "ok",
+        "replayed": false,
+        "label": "TAG001",
+        "location": "SHA",
+        "loaded": "CZ789",
+        "delivered": false,
+        "completed": [
+          {
+            "flight": "CA123",
+            "from": "PEK",
+            "to": "SHA"
+          }
+        ],
+        "remaining": [
+          {
+            "flight": "CZ789",
+            "from": "SHA",
+            "to": "CTU"
+          }
+        ]
+      }
+    },
+    "7": {
+      "hash": "4eebc07cf3131c407e3dea8ac9d7979f6b0f26c6d92140c53ae35d8b96b76569",
+      "body": {
+        "status": "ok",
+        "replayed": false,
+        "label": "TAG001",
+        "location": "CTU",
+        "delivered": false,
+        "completed": [
+          {
+            "flight": "CA123",
+            "from": "PEK",
+            "to": "SHA"
+          },
+          {
+            "flight": "CZ789",
+            "from": "SHA",
+            "to": "CTU"
+          }
+        ],
+        "remaining": []
+      }
+    },
+    "8": {
+      "hash": "6331862599c7d1f222841ff50c5db9eaa2eb65e8e3682109a3b4f8d157056d10",
+      "body": {
+        "status": "ok",
+        "replayed": false,
+        "label": "TAG001",
+        "location": "CTU",
+        "delivered": true,
+        "completed": [
+          {
+            "flight": "CA123",
+            "from": "PEK",
+            "to": "SHA"
+          },
+          {
+            "flight": "CZ789",
+            "from": "SHA",
+            "to": "CTU"
+          }
+        ],
+        "remaining": []
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{"op":"register-flight","number":"CA123","from":"PEK","to":"SHA"}
+{"op":"register-flight","number":"MU456","from":"SHA","to":"CAN"}
+{"op":"register-bag","label":"TAG001","segments":[{"flight":"CA123","from":"PEK","to":"SHA"},{"flight":"MU456","from":"SHA","to":"CAN"}]}
+{"op":"scan","id":1,"type":"load","label":"TAG001","time":10,"flight":"CA123"}
+{"op":"scan","id":2,"type":"remove","label":"TAG001","time":11,"flight":"CA123"}
+{"op":"scan","id":1,"type":"load","label":"TAG001","time":10,"flight":"CA123"}
+{"op":"scan","id":3,"type":"load","label":"TAG001","time":12,"flight":"CA123"}
+{"op":"scan","id":4,"type":"unload","label":"TAG001","time":13,"flight":"CA123"}
+{"op":"scan","id":5,"type":"rebook","label":"TAG001","time":14}
+{"op":"query","label":"TAG001"}
